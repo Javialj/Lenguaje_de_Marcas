@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="factura.xsd">
+    <numero>1</numero>
+    <cliente>
+        <nombre>fasfasf</nombre>
+        <CIF>1425</CIF>
+    </cliente>
+    <concepto>
+        <descripcion>fasfwdddasd</descripcion>
+        <importe>1000</importe>
+    </concepto>
+    <concepto>
+        <descripcion>fsafaf</descripcion>
+        <importe>23124</importe>
+    </concepto>
+    <impuesto  importe="IVA">Pendiente</impuesto>
+    <total_factura>5553346</total_factura>
+</factura>

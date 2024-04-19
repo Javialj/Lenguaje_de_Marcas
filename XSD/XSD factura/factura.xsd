@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura">
+    
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="numero" type="xs:integer"/>
+            <xs:element name="cliente">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre"></xs:element>
+                        <xs:element name="CIF"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="concepto" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="descripcion"></xs:element>
+                        <xs:element name="importe"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="impuesto"></xs:element>
+            <xs:element name="total_factura"></xs:element>
+        </xs:sequence>
+  
+    </xs:complexType>
+    
+    </xs:element>
+</xs:schema>
